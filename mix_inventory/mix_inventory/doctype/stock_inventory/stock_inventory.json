@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "autoname": "SIV-.#####",
+ "creation": "2022-11-23 13:18:02.021667",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "location",
+  "date",
+  "added_by",
+  "stock_inventory_line",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "LOC-MIX",
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Location",
+   "options": "Stock Location",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "added_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Added By",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stock_inventory_line",
+   "fieldtype": "Table",
+   "label": "Stock Inventory Line",
+   "options": "Stock Inventory Line"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stock Inventory",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-11-25 14:36:25.644473",
+ "modified_by": "Administrator",
+ "module": "Mix Inventory",
+ "name": "Stock Inventory",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
