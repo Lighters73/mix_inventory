@@ -11,7 +11,8 @@
   "location",
   "date",
   "raised_by",
-  "stock_move"
+  "stock_move",
+  "amended_from"
  ],
  "fields": [
   {
@@ -38,11 +39,21 @@
    "label": "Location",
    "options": "Customer Location",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stock Customer Shipment",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2022-11-25 15:56:29.185652",
+ "modified": "2022-11-27 11:43:08.743329",
  "modified_by": "Administrator",
  "module": "Mix Inventory",
  "name": "Stock Customer Shipment",

@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "format:LOC-{code}",
+ "autoname": "format:LOC_{code}",
  "creation": "2022-11-23 12:18:03.092738",
  "default_view": "List",
  "doctype": "DocType",
@@ -42,7 +42,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-25 10:08:30.965263",
+ "modified": "2022-11-29 14:30:54.055146",
  "modified_by": "Administrator",
  "module": "Mix Inventory",
  "name": "Stock Location",
